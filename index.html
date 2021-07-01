@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+</head>
+
+<body>  
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="src/logorolling.png" alt="logorolling" width="30">
+        </a>
+        <a class="navbar-brand" href="#">Comisión 15i</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-lg-auto">
+            <li class="nav-item mx-lg-5 mx-auto">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-lg-5 mx-auto">
+              <a class="nav-link active" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown mx-lg-5 mx-auto">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Integrantes
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Carla Farias</a></li>
+                <li><a class="dropdown-item" href="#">Maria Belen Gallardo</a></li>
+                <li><a class="dropdown-item" href="#">Gabriel Alcorta</a></li>
+                <li><a class="dropdown-item" href="#">Juan Pablo Capilla</a></li>
+                <li><a class="dropdown-item" href="#">Lucas Dadin</a></li>
+                <li><a class="dropdown-item" href="#">Lucas Maranzano</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mx-lg-5 mx-auto">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Profesores
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Maxi Bernasconi</a></li>
+                <li><a class="dropdown-item" href="#">Diego Olmi</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-grid gap-2 justify-content-center">
+            <a class="btn btn-outline-warning d-block" data-bs-toggle="modal" href="#exampleModalToggle"
+            role="button">Contactanos!</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel">Dejanos tus datos!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingname" placeholder="Tu nombre">
+            <label for="floatingname">Nombre</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatinglastname" placeholder="Tu Apellido">
+            <label for="floatinglastname">Apellido</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingemail" placeholder="nombre@ejemplo.com.ar" required>
+            <label for="floatingemail">Tu Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="tel" class="form-control" id="floatingetel" placeholder="+5493816478066">
+            <label for="floatingtel">Tu teléfono</label>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Algun dato adicional</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-warning" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+            data-bs-dismiss="modal">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel2">Datos recibidos!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Gracias por enviar tus datos, nos pondremos en contacto en breve! Muchas gracias!
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-warning" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+            data-bs-dismiss="modal">Volver al formulario</button>
+          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="pt-3">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mx-2 ">
+      <div class="col">
+          <div class="card border-3 bg-light shadow">
+              <img src="src/belengallardo.jpg" class="card-img-top" alt="belengallardo">
+              <div class="card-body">
+                  <h5 class="card-title">Belen Gallardo - Developer</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="bg-secondary p-1 d-flex justify-content-center">
+                  <img class="img-fluid" src="src/logorolling.png" alt="logorolling" width="50" >
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card border-3 bg-light shadow">
+              <img src="src/lucasdadin.jpg" class="card-img-top" alt="lucasdadin">
+              <div class="card-body">
+                  <h5 class="card-title">Lucas Dadin - Developer</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="bg-secondary p-1 d-flex justify-content-center">
+                  <img class="img-fluid" src="src/logorolling.png" alt="logorolling" width="50" >
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card border-3 bg-light shadow">
+              <img src="src/gabrielalcorta.jpg" class="card-img-top" alt="gabrielalcorta">
+              <div class="card-body">
+                  <h5 class="card-title">Gabriel Alcorta - Developer</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="bg-secondary p-1 d-flex justify-content-center">
+                  <img class="img-fluid" src="src/logorolling.png" alt="logorolling" width="50" >
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card border-3 bg-light shadow">
+              <img src="src/juanpcapilla.jpg" class="card-img-top" alt="juanpcapilla">
+              <div class="card-body">
+                  <h5 class="card-title">Juan Pablo Capilla - Developer</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="bg-secondary p-1 d-flex justify-content-center">
+                  <img class="img-fluid" src="src/logorolling.png" alt="logorolling" width="50" >
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card border-3 bg-light shadow">
+              <img src="src/lucasmaranzano.jpg" class="card-img-top" alt="lucasmaranzano">
+              <div class="card-body">
+                  <h5 class="card-title">Lucas Maranzano - Scrum Master</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="bg-secondary p-1 d-flex justify-content-center">
+                  <img class="img-fluid" src="src/logorolling.png" alt="logorolling" width="50" >
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card border-3 bg-light shadow">
+              <img src="src/carlafarias.jpg" class="card-img-top" alt="carlafarias">
+              <div class="card-body">
+                  <h5 class="card-title">Carla Farias - Developer</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="bg-secondary p-1 d-flex justify-content-center">
+                  <img class="img-fluid" src="src/logorolling.png" alt="logorolling" width="50" >
+              </div>
+          </div>
+      </div>
+  </div>
+  </main>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
