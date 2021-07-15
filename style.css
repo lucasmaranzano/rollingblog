@@ -1,0 +1,13 @@
+.logoredes{
+    filter: opacity(1);   
+}
+.logoredes:hover{
+    filter: opacity(.5);  
+}
+
+.hovertarjetas{
+    filter: grayscale(100%);
+}
+.hovertarjetas:hover{
+    filter: grayscale(0%);
+}
