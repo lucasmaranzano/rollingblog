@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -15,11 +15,11 @@
 
 <body id="top">
 
-<header>
+  <header class="sticky-top">
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand">
+        <a class="navbar-brand" href="index.html">
           <img src="src/logorolling.png" alt="logorolling" width="30">
         </a>
         <a class="navbar-brand">Comisión 15i</a>
@@ -129,8 +129,70 @@
     </div>
   </div>
 
-<body>
-  
+  <body>
+
+
+    <div class="container-sm pt-3">
+
+      <div class="d-flex justify-content-center">
+        <p class="fs-1 pb-2">Contactanos</p>
+      </div>
+
+
+      <div class="row">
+
+        <!--Div vacio-->
+        <div class="col-1 col-lg-3">
+        </div>
+        <!--Div vacio-->
+
+        <div class="col-10 col-lg-6">
+          <form action="#" method="GET" id="formulariocontacto">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Nombre" name="nombre" aria-label="Username"
+                maxlength="20" required aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Apellido" name="apellido" aria-label="Username"
+                maxlength="20" required aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Dirección" name="direccion" aria-label="Username"
+                maxlength="20" required aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Empresa" aria-label="Username" name="empresa"
+                maxlength="20" required aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <input type="number" class="form-control" placeholder="Teléfono con codigo de área" aria-label="Username"
+                name="telefono" maxlength="20" required aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Email" aria-label="Username" name="email"
+                maxlength="20" required aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+              <textarea class="form-control" aria-label="With textarea" placeholder="Datos adicionales" maxlength="500"
+                rows="6"></textarea>
+            </div>
+          </form>
+          <div class="d-flex justify-content-center align-items-center">
+            <button type="submit" class="btn btn-outline-warning mt-2" form="formulariocontacto">Enviar</button>
+          </div>
+        </div>
+
+        <!--Div vacio-->
+        <div class="col-1 col-lg-3">
+        </div>
+        <!--Div vacio-->
+
+      </div>
+
+
+
+
+    </div>
 
 
 
@@ -139,8 +201,8 @@
 
 
 
-  
-</body>
+
+  </body>
 
 
   <!--FOOTER-->
@@ -152,14 +214,17 @@
         <div class="col-12 col-md-5 mx-auto">
           <div class="row">
             <div class="col-6 col-lg-3 py-1"><a href="https://twitter.com/rollingcodeok" target="_blank"><img
-                  src="src/twitter.png" class="mx-auto d-block logoredes" alt="twitterlogo"></a></div>
+                  src="src/twitter.png" class="mx-auto d-block logoredes" alt="twitterlogo"></a>
+            </div>
             <div class="col-6 col-lg-3 py-1"><a href="https://www.facebook.com/RollingCodeSchool" target="_blank"><img
-                  src="src/facebook.png" class="mx-auto d-block logoredes" alt="twitterlogo"></a></div>
+                  src="src/facebook.png" class="mx-auto d-block logoredes" alt="twitterlogo"></a>
+            </div>
             <div class="col-6 col-lg-3 py-1"><a href="https://www.youtube.com/channel/UCqqU2Ztlv_QKGPXRW9LrR9w"
                 target="_blank"><img src="src/youtube.png" class="mx-auto d-block logoredes" alt="twitterlogo"></a>
             </div>
             <div class="col-6 col-lg-3 py-1"><a href="https://www.instagram.com/rollingcodeschool" target="_blank"><img
-                  src="src/instagram.png" class="mx-auto d-block logoredes" alt="twitterlogo"></a></div>
+                  src="src/instagram.png" class="mx-auto d-block logoredes" alt="twitterlogo"></a>
+            </div>
           </div>
         </div>
 

@@ -1,13 +1,68 @@
-.logoredes{
-    filter: opacity(1);   
-}
-.logoredes:hover{
-    filter: opacity(.5);  
+.logoredes {
+    filter: opacity(1);
 }
 
-.hovertarjetas{
+.logoredes:hover {
+    filter: opacity(.5);
+    filter: drop-shadow(0 2px 5px rgba(200, 255, 0, 0.7));
+}
+
+.hovertarjetas {
     filter: grayscale(100%);
 }
-.hovertarjetas:hover{
+
+.hovertarjetas:hover {
     filter: grayscale(0%);
+}
+
+
+input[type=number]::-webkit-outer-spin-button,
+
+input[type=number]::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}
+
+
+
+input[type=number] {
+
+    -moz-appearance: textfield;
+
+}
+
+
+
+#body404 {
+    /* Aquí el origen de la imagen */
+    background-image: url(src/developer.jpg);
+  
+    /* Fijar la imagen de fondo este vertical y
+      horizontalmente y centrado */
+    background-position: center center;
+  
+    /* Esta imagen no debe de repetirse */
+    background-repeat: no-repeat;
+  
+    /* COn esta regla fijamos la imagen en la pantalla. */
+    background-attachment: fixed;
+  
+    /* La imagen ocupa el 100% y se reescala */
+    background-size: cover;    
+  }
+
+
+#rolling404{
+    z-index: -1;
+}
+
+#rolling404:hover{
+    filter: drop-shadow(0 0 0.75rem rgb(224,13,77));
+}
+
+#texto404{
+    z-index: 1;
 }
