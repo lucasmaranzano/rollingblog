@@ -66,3 +66,33 @@ input[type=number] {
 #texto404{
     z-index: 1;
 }
+
+
+h3{
+    color: black;
+    text-align: center;
+   }
+   
+   #proyectosfinales{
+       margin-top: 40px;
+       margin-bottom: 40px;
+       font-size: 3em;
+   }
+   
+   .proyectosfinales{
+       border-bottom: red;
+   }
+   
+   .card-title{
+       font-size: 2em;
+   }
+   
+   .card-text{
+       font-size: 1em;
+   }
+   
+   .container .card:hover{
+       transform: translateY(-15px);
+       box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+   }
+   
